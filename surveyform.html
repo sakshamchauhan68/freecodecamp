@@ -1,0 +1,131 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <h1 id="title">Student Survey Form</h1>
+
+  <p id="description">
+    Please fill out this short survey to help us understand your preferences.
+  </p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      placeholder="Enter your name"
+      required
+    >
+
+    <br><br>
+
+    <label id="email-label" for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    >
+
+    <br><br>
+
+    <label id="number-label" for="number">Age</label>
+    <input
+      id="number"
+      type="number"
+      name="age"
+      min="10"
+      max="100"
+      placeholder="Enter your age"
+    >
+
+    <br><br>
+
+    <label for="dropdown">What is your favorite subject?</label>
+    <select id="dropdown" name="subject">
+      <option value="math">Mathematics</option>
+      <option value="science">Science</option>
+      <option value="english">English</option>
+    </select>
+
+    <br><br>
+
+    <p>What is your preferred study method?</p>
+
+    <label>
+      <input
+        type="radio"
+        name="study-method"
+        value="online"
+      >
+      Online Learning
+    </label>
+
+    <label>
+      <input
+        type="radio"
+        name="study-method"
+        value="classroom"
+      >
+      Classroom Learning
+    </label>
+
+    <br><br>
+
+    <p>Which activities do you enjoy?</p>
+
+    <label>
+      <input
+        type="checkbox"
+        name="activity"
+        value="reading"
+      >
+      Reading
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="activity"
+        value="sports"
+      >
+      Sports
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="activity"
+        value="music"
+      >
+      Music
+    </label>
+
+    <br><br>
+
+    <label for="comments">Additional comments</label>
+    <textarea
+      id="comments"
+      name="comments"
+      placeholder="Enter your comments here"
+    ></textarea>
+
+    <br><br>
+
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+```
